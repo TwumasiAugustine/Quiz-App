@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Quiz App</h1>
+    <form id="quiz-form">
+    <h2>Question 1</h2>
+    <p>What is the capital of France?</p>
+    <label><input type="radio" name="q1" value="a">Paris</label><br>
+    <label><input type="radio" name="q1" value="b">London</label><br>
+    <label><input type="radio" name="q1" value="c">Rome</label><br>
+    <label><input type="radio" name="q1" value="d">Madrid</label><br>
+    <button type="button" onclick="nextQuestion()">Next</button>
+    </form>
+    <div id="countScore">
+        <p id="timer">Time remaining: 100 seconds</p>
+        <p id="score" ></p>
+    </div>
+    <div id="footer">
+        <p>@dev_twumstine 2022</p>
+    </div>
+    <script src="./app.js" type="text/javascript"></script>
+</body>
+<audio src="./Correct.mp3" id="correct"></audio>
+<audio src="./Incorrect.mp3" id="incorrect"></audio>
+</html>
